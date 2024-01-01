@@ -6,7 +6,7 @@
 ###### Clone the repository
     Run: git clone https://github.com/rahatMahmud176/inflexionpoint-task.git
 
-- Run: composer install
+    composer install
 - Run: cp .env.example .env
 ###### Open the .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your
 
