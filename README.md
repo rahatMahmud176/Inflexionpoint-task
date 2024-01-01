@@ -4,7 +4,7 @@
 
 
 #### STEP:1 Clone the repository
-git clone https://github.com/rahatMahmud176/inflexionpoint-task.git
+    git clone https://github.com/rahatMahmud176/inflexionpoint-task.git
 
 #### STEP:2 Composer install
     composer install
