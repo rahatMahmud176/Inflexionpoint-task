@@ -63,7 +63,8 @@
 
 ### Task:3 Role Authorization:
 - there are two users in my project I created by using Seeder.
-       1: Name: Admin,
+
+     1: Name: Admin,
           Email: admin@gmail.com,
           Password: 12345678,
           Role: "is_admin" is True.
