@@ -63,15 +63,15 @@
 
 ### Task:3 Role Authorization:
 - there are two users in my project I created by using Seeder.
-      1: Name: Admin,
-         Email: admin@gmail.com,
-         Password: 12345678,
-        Role: "is_admin" is True.
+       1: Name: Admin,
+          Email: admin@gmail.com,
+          Password: 12345678,
+          Role: "is_admin" is True.
   
       2: Name: User,
-      Email: user@gmail.com,
-      Password: 12345678,
-      Role: "is_admin" is false.
+         Email: user@gmail.com,
+         Password: 12345678,
+         Role: "is_admin" is false.
   
 ##### -When you logged in With "Admin", you can Access ProductController and All. but when you logged in with "User", you can't access. 
     
