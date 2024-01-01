@@ -26,8 +26,25 @@
     php artisan migrate:fresh --seed
 #### -now you can see the database tables with 5 categories and 25 products.
 
-#### STEP:7 
-- Open the ProductObserver file. (App\Observers\ProductObserver)
+#### STEP:7 Open the ProductObserver file and Uncomment Cteated function.
+##### (App\Observers\ProductObserver)
+
+##### From, 
+    // public function created(Product $product): void
+    // { 
+    //     $data['email']   = Auth::user()->email;
+    //     $data['subject'] = "Dear user, Product Created successfully."; 
+    //     dispatch(new SendMailJob($data));
+    // }
+##### To,
+    public function created(Product $product): void
+    {  
+        $data['email']   = Auth::user()->email;
+        $data['subject'] = "Dear user, Product Created successfully."; 
+        dispatch(new SendMailJob($data));
+    }
+
+    
 ###### Uncomment Cteated function.
 - Run: php artisan serve
 - Go to http://localhost:8000/
