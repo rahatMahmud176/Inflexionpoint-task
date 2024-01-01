@@ -14,7 +14,7 @@ Route::middleware('can:is_admin')
                              ->group(function(){
       Route::resource('categories',CategoryController::class);
       Route::resource('products',ProductController::class);
-      Route::get('products-purchase',[ProductController::class,'purchase'])->name('products.purchase');
+      Route::get('products-purchase/{product}',[ProductController::class,'purchase'])->name('products.purchase');
   
   
 });  

@@ -38,7 +38,7 @@
                                         <i class="bi bi-trash3-fill"></i>
                                         Delete
                                     </button> |
-                                    <a href="{{ route('admin.products.purchase') }}" class="btn btn-sm btn-warning">Purchase</a>
+                                    <a href="{{ route('admin.products.purchase',['product'=>$product]) }}" class="btn btn-sm btn-warning">Purchase</a>
 
                                     <form id="product-delete-form-{{ $product->id }}"
                                         action="{{ route('admin.products.destroy', $product->id) }}" method="POST"> 

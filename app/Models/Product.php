@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Events\ProductPurchased;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -19,6 +20,9 @@ public static function newProduct($request)
         'price'    => $request->price,
         'quantity' => $request->quantity,
     ])->categories()->sync($request->input('categories'));
+
+//  Note: here is my ProductObserver work hiddenly for send mail.
+
 }
 
 public static function updateProduct($request,$product)
@@ -30,6 +34,21 @@ public static function updateProduct($request,$product)
     ]);
     $product->categories()->sync($request->input('categories'));
 }
+
+
+
+public static function productPurchase($product)
+{  
+    //Product Purchase functionality. 
+    $product->update([
+        'quantity' => $product->quantity -1,
+    ]);
+ 
+    event(new ProductPurchased($product));
+}
+
+
+
 
 
 

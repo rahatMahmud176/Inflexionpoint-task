@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ProductCreateMail;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ProductController extends Controller
 {
@@ -12,16 +14,25 @@ class ProductController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    { 
+    {  
         $products   = Product::orderBy('id','DESC')->paginate('10');
         return view('backend.products.index', compact('products'));
     }
 
-    public function purchase()
-    {
-
-        notify()->success('Product Purchase Successfully','Success');
+    public function purchase(Product $product)
+    {  
+        if (!$product->quantity == 0) {
+            Product::productPurchase($product);  
+            notify()->success('Product Purchase Successfully','Success'); 
+        } else { 
+            notify()->error('You have not enough Stock','Error');
+        }
+        
+        
         return back();
+
+
+
     }
 
 
