@@ -55,9 +55,9 @@
 ##### Model: 
 -Product, Category
 #### Migration File:
--2023_12_31_152943_create_products_table.php
--2023_12_31_153009_create_categories_table.php
+- 2023_12_31_152943_create_products_table.php
+- 2023_12_31_153009_create_categories_table.php
 #### And the relationship Table between products and categories.
--2023_12_31_153254_create_category_product_table.php
+- 2023_12_31_153254_create_category_product_table.php
     
 
