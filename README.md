@@ -1,6 +1,6 @@
 
 
- ### Require PHP version minimum  (PHP v8.1.10) 
+### Require PHP version minimum  (PHP v8.1.10) 
 
 
 #### STEP:1 Clone the repository
@@ -12,8 +12,13 @@
 #### STEP:3 Generate .env file 
     cp .env.example .env
     
-###### Open the .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your
+#### STEP:4 Open the .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your
+    
+    DB_DATABASE="db_inflexionpoint_task"
+    DB_USERNAME="root"
+    DB_PASSWORD=""
 
+    
 - Run: php artisan key:generate
 
 - Run: php artisan migrate:fresh --seed
