@@ -1,6 +1,6 @@
 
 
- ###require PHP version minimum  (PHP v8.1.10) 
+ ### Require PHP version minimum  (PHP v8.1.10) 
 
 
 - Clone the repository
