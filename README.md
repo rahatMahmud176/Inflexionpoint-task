@@ -26,6 +26,7 @@
     php artisan migrate:fresh --seed
 #### -now you can see the database tables with 5 categories and 25 products.
 
+
 #### STEP:7 Open the ProductObserver file and Uncomment Cteated function.
 ##### (App\Observers\ProductObserver)
 
