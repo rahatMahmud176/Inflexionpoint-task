@@ -82,8 +82,14 @@
 #### And Create a Product
      http://127.0.0.1:8000/admin/products/create
 
-#### Copy the link: and test the emails work fine or not.
+#### Copy the link: and test the emails working fine or not.
     https://mailtrap.io/inboxes/2543190/messages
     user     : rahat2card@gmail.com
     password : rahatmahmud1165K
- 
+
+### Task:5 Events and Listeners: Get Updates Product Quantity By Mail
+#### -Here you need to Run The Command
+    php artisan queue:work
+#### And Purchase a Product by Clicking the Purchase Button
+     http://127.0.0.1:8000/admin/products
+#### -Go to: https://mailtrap.io/inboxes/2543190/messages And Check the Inbox.
