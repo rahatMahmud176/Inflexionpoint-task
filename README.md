@@ -45,7 +45,6 @@
         dispatch(new SendMailJob($data));
     }
 
-    
-###### Uncomment Cteated function.
-- Run: php artisan serve
-- Go to http://localhost:8000/
+#### Now The Project is Run By using Command:
+    php artisan serve
+    Go to http://localhost:8000/
