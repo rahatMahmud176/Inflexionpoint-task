@@ -24,7 +24,9 @@
 #### STEP:6 More Important Task(6 & 7 number Point) 
 #### Migrate The Database With Seeders.
     php artisan migrate:fresh --seed
+#### -now you can see the database tables with 5 categories and 25 products.
 
+#### STEP:7 
 - Open the ProductObserver file. (App\Observers\ProductObserver)
 ###### Uncomment Cteated function.
 - Run: php artisan serve
