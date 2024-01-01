@@ -61,8 +61,10 @@
 #### (between products and categories).
 - 2023_12_31_153254_create_category_product_table.php
 
-### Task:3 Role Authentication 
+### Task:3 Role Authorization 
 - there are two users in my project I created by using Seeder.
-- 1: Name: Admin, Email: admin@gmail.com, Password: 12345678, And Role: is_admin is True.
+- 1: Name: Admin, Email: admin@gmail.com, Password: 12345678, And Role: "is_admin" is True.
+- 2: Name: User, Email: user@gmail.com, Password: 12345678, And Role: "is_admin" is false.
+##### -When you logged in With Admin, you can Access Product Controller. but when you logged in with User, you can't access.
     
 
