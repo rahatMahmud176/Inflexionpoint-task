@@ -45,9 +45,10 @@
         dispatch(new SendMailJob($data));
     }
 
-#### Now The Project is Run By using Command:
+#### Now The Project Run By using Command:
     php artisan serve
-    Go to http://localhost:8000/login
+    
+#### -Go to: http://localhost:8000/login
 
 # Now I'm Explaining Your 6 Tasks One by One:
 
