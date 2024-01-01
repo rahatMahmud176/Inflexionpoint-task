@@ -13,7 +13,7 @@
     cp .env.example .env
     
 #### STEP:4 Open the .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your
-    
+#### like,
     DB_DATABASE="db_inflexionpoint_task"
     DB_USERNAME="root"
     DB_PASSWORD=""
