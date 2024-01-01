@@ -21,7 +21,8 @@
 #### STEP:5 Now Generating The APP Key By Using Command:   
     php artisan key:generate
 
-#### STEP:6 The More Important Task Here. Migrate The Database With Seeders.
+#### STEP:6 More Important Task(6 & 7 number Point) 
+#### Migrate The Database With Seeders.
     php artisan migrate:fresh --seed
 
 - Open the ProductObserver file. (App\Observers\ProductObserver)
