@@ -7,7 +7,7 @@
     Run: git clone https://github.com/rahatMahmud176/inflexionpoint-task.git
 
     composer install
-  cp .env.example .env
+    cp .env.example .env
 ###### Open the .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your
 
 - Run: php artisan key:generate
