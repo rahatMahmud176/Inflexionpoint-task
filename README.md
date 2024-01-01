@@ -3,31 +3,31 @@
 ### Require PHP version minimum  (PHP v8.1.10) 
 
 
-#### STEP:1 Clone the repository
+### STEP:1 Clone the repository
     git clone https://github.com/rahatMahmud176/inflexionpoint-task.git
 
-#### STEP:2 Composer install
+### STEP:2 Composer install
     composer install
     
-#### STEP:3 Generate .env file 
+### STEP:3 Generate .env file 
     cp .env.example .env
     
-#### STEP:4 Open the .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your
+### STEP:4 Open the .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your
 #### like,
     DB_DATABASE="db_inflexionpoint_task"
     DB_USERNAME="root"
     DB_PASSWORD=""
 
-#### STEP:5 Now Generating The APP Key By Using Command:   
+### STEP:5 Now Generating The APP Key By Using Command:   
     php artisan key:generate
 
-#### STEP:6 More Important Task(6 & 7 number Point) 
+### STEP:6 More Important Task(6 & 7 number Point) 
 #### Migrate The Database With Seeders.
     php artisan migrate:fresh --seed
 #### -now you can see the database tables with 2 Users, 5 categories, and 25 products.
 
 
-#### STEP:7 Open the ProductObserver file and Uncomment Cteated method.
+### STEP:7 Open the ProductObserver file and Uncomment Cteated method.
 ##### (App\Observers\ProductObserver)
 
 ##### From, 
@@ -51,13 +51,13 @@
 
 # Now I'm Explaining Your 6 Tasks One by One:
 
-#### Task: 1 & 2 you can see well by opening files into my projects
+### Task: 1 & 2 you can see well by opening files into my project.
 #### Model: 
 - Product, Category
 #### Migration Files:
 - 2023_12_31_152943_create_products_table.php
 - 2023_12_31_153009_create_categories_table.php
-#### And the relationship Table is
+#### The relationship Table is
 #### (between products and categories).
 - 2023_12_31_153254_create_category_product_table.php
 
@@ -67,4 +67,4 @@
 - 2: Name: User, Email: user@gmail.com, Password: 12345678, And Role: "is_admin" is false.
 ##### -When you logged in With Admin, you can Access Product Controller. but when you logged in with User, you can't access.
     
-
+###
