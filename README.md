@@ -18,8 +18,8 @@
     DB_USERNAME="root"
     DB_PASSWORD=""
 
-    
-- Run: php artisan key:generate
+#### STEP:5 Now Generating The APP Key By Using Command:   
+    php artisan key:generate
 
 - Run: php artisan migrate:fresh --seed
 - Open the ProductObserver file. (App\Observers\ProductObserver)
