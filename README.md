@@ -27,7 +27,7 @@
 #### -now you can see the database tables with 2 Users, 5 categories, and 25 products.
 
 
-### STEP:7 Open the ProductObserver file and Uncomment Cteated function.
+#### STEP:7 Open the ProductObserver file and Uncomment Cteated method.
 ##### (App\Observers\ProductObserver)
 
 ##### From, 
@@ -47,4 +47,6 @@
 
 #### Now The Project is Run By using Command:
     php artisan serve
-    Go to http://localhost:8000/
+    Go to http://localhost:8000/login
+
+
