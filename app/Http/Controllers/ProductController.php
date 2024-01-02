@@ -6,10 +6,12 @@ use App\Mail\ProductCreateMail;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
 class ProductController extends Controller
-{
+{ 
+ 
     /**
      * Display a listing of the resource.
      */
