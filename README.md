@@ -45,7 +45,7 @@
         dispatch(new SendMailJob($data));
     }
 
-#### Now The Project Run By using Commands:
+### STEP:8 Now The Project Run By using Flowing Commands:
 ##### -Run these commands only the first time. 
     npm install
     npm run dev
