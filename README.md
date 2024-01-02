@@ -45,7 +45,11 @@
         dispatch(new SendMailJob($data));
     }
 
-#### Now The Project Run By using Command:
+#### Now The Project Run By using Commands:
+##### -Run these commands only the first time. 
+    npm install
+    npm run dev
+##### -And finally you run this command.
     php artisan serve
     
 #### -Go to: http://localhost:8000/login
