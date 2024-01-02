@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController; 
 use Illuminate\Support\Facades\Route;
  
@@ -18,9 +19,10 @@ Route::middleware('can:is_admin')
   
   
 });  
+
+Route::get('/dashboard', DashboardController::class)->middleware(['auth', 'verified'])->name('dashboard');
+
 //----------------- Backend Router ----------------//
-
-
 
 
 
@@ -39,9 +41,8 @@ Route::get('/', function () {
 
 
 //-----------Auth Router With laravel Breeze ---------------------// 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
+
 
 
 Route::middleware('auth')->group(function () {

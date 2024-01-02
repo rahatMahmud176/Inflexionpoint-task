@@ -11,13 +11,24 @@ class ProductObserver
     /**
      * Handle the Product "created" event.
      */
-    public function created(Product $product): void
-    {
-        // info(Observer ver work fine); 
-        $data['email']   = Auth::user()->email;
-        $data['subject'] = "Dear user, Product Created successfully."; 
-        dispatch(new SendMailJob($data));
-    }
+
+
+ 
+
+    //Please Uncomment this function 
+
+
+    // public function created(Product $product): void
+    // {  
+    //     $data['email']   = Auth::user()->email;
+    //     $data['subject'] = "Dear user, Product Created successfully."; 
+    //     dispatch(new SendMailJob($data));
+    // }
+
+
+
+
+
 
     /**
      * Handle the Product "updated" event.
